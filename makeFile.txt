@@ -4,5 +4,5 @@ main.o: main.cpp
 	g++ -c main.cpp
 funcLib.o: funcLib.cpp
 	g++ -c funcLib.cpp
-clen:
+clean:
 	del /A : *.o
