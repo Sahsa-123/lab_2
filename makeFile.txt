@@ -1,0 +1,8 @@
+calculator: main.o funcLib.o
+	g++ -o calculator main.o funcLib.o
+main.o: main.cpp
+	g++ -c main.cpp
+funcLib.o: funcLib.cpp
+	g++ -c funcLib.cpp
+clen:
+	del /A : *.o
